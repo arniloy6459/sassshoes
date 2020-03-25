@@ -1,0 +1,90 @@
+$text-color: #000;
+$hover-color: rgb(71, 71, 71);
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 35px;
+
+    &__icon {
+        font-size: 50px;
+    }
+
+    &__small {
+        font-size: 20px;
+        font-family: 'Averia Serif Libre';
+    }
+}
+
+.nav-link {
+    font-family: 'Averia Serif Libre';
+    color: $text-color!important;
+
+    &.active {
+        color: red!important;
+
+        &:hover {
+            color: red!important;
+        }
+    }
+
+    &:hover {
+        color: $hover-color!important;
+    }
+
+    &__icon {
+        font-size: 20px;
+    }
+}
+
+.text {
+    font-family: 'Averia Serif Libre';
+}
+
+header {
+    height: 100%;
+    width: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        padding-left: 30px;
+
+        a {
+            padding: 3px;
+            @include transition-ease;
+            color: $text-color;
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 1rem;
+        position: fixed;
+        bottom: 0.4rem;
+        right: 1rem;
+        text-align: right;
+        padding: 1rem;
+        color: $text-color;
+
+        a {
+            color: red;
+            text-decoration: none;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+}

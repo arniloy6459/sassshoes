@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.logo {
+  font-size: 35px; }
+  .logo__icon {
+    font-size: 50px; }
+  .logo__small {
+    font-size: 20px;
+    font-family: 'Averia Serif Libre'; }
+
+.nav-link {
+  font-family: 'Averia Serif Libre';
+  color: #000 !important; }
+  .nav-link.active {
+    color: red !important; }
+    .nav-link.active:hover {
+      color: red !important; }
+  .nav-link:hover {
+    color: #474747 !important; }
+  .nav-link__icon {
+    font-size: 20px; }
+
+.text {
+  font-family: 'Averia Serif Libre'; }
+
+header {
+  height: 100%;
+  width: 100%; }
+  header .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    padding-left: 30px; }
+    header .social-icons a {
+      padding: 3px;
+      transition: all 0.5s ease-in-out;
+      color: #000; }
+      header .social-icons a:hover {
+        color: #474747; }
+  header .footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: #000; }
+    header .footer a {
+      color: red;
+      text-decoration: none; }
+      header .footer a:hover {
+        color: #000; }
+
+/*# sourceMappingURL=main.css.map */
